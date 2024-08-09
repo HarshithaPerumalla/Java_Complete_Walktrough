@@ -1,0 +1,59 @@
+JAVA INTRODUCTION
+
+Java is a high-level, class-based, object-oriented programming language.
+
+It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), 
+i.e, a java program that is compiled in a computer can be run on all other platforms without being compiled again.
+
+FEATURES OF JAVA:
+Simple
+Object-Oriented
+Platform independent
+Portable
+Secured
+Robust
+Architecture neutral
+Interpreted
+High Performance
+Multithreaded
+Distributed
+Dynamic
+
+1.Simple: Java syntax is based on C++ (so easier for programmers to learn it after C++).
+          Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc.
+          There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.
+
+2.Object-oriented: Java programming language is based on objects and classes. 
+                  Expect primitive data types in java( like int, char, float etc) and static methods, variables(static is a keyword in java ) Everything is considered as object and classes.
+                  which allows developers and programmers have greater control over reusability and managing application.
+
+3.Platform independent: Java can be intended to to be write once and run anywhere 
+                        i.e, if a program is compiled on one platform . the compiled byte code can be run on any other platforms(like windows,mac,linux) which make it like platform independent.
+
+4.Poratble: Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation.
+
+5. Secured: Java is secured because:
+            a.No explicit pointer
+            b.Java Programs run inside a virtual machine sandbox. that is java runs on Java application runs in JAVA VIRTUAL MACHINE . doesnt have direct contact with operating system.
+            Classloader: Classloader in Java is a part of the Java Runtime Environment (JRE) which is used to load Java classes into the Java Virtual Machine dynamically. It adds security by separating the package for the classes of the local file system from those that are imported from network sources.
+            Bytecode Verifier: It checks the code fragments for illegal code that can violate access rights to objects.
+            Security Manager: It determines what resources a class can access such as reading and writing to the local disk.
+6.Robust:
+            Java is considered robust due to several key features:
+            a.Automatic Memory Management: Java's garbage collection automatically handles memory allocation and deallocation, reducing the chances of memory leaks and errors like null pointer exceptions.
+            b.Exception Handling: Java has a strong exception handling mechanism that helps in managing runtime errors and ensures the application can gracefully handle unexpected situations
+            c.Type Safety: Java's strong type-checking at compile-time and runtime minimizes bugs and ensures that operations are performed on compatible data types
+            d.Multi-threading Support: Java's built-in support for multi-threading allows for the development of highly responsive and efficient applications.
+            e.Platform Independence: Java programs run on any device with a JVM, providing consistent behavior across different environments.
+
+7. Architecture Neutral: Java’s bytecode is platform-independent, meaning it can run on any device with a JVM (Java Virtual Machine), regardless of underlying hardware architecture.
+
+8. Interpreted: Java programs are compiled into bytecode, which is interpreted by the JVM at runtime. This allows Java to be platform-independent and enables dynamic behavior.
+
+9. High Performance: Java's Just-In-Time (JIT) compiler converts bytecode into native machine code at runtime, improving execution speed. Additionally, modern JVM optimizations enhance performance.
+
+10. Multithreaded: Java supports multithreading natively, allowing concurrent execution of tasks within a single program. This improves performance and responsiveness, especially in complex applications.
+
+11. Distributed: Java provides built-in support for networked applications through APIs like RMI (Remote Method Invocation) and Java EE (Enterprise Edition), facilitating the development of distributed systems.
+
+12. Dynamic: Java can dynamically load classes and libraries at runtime, allowing for flexible and adaptable applications that can respond to changing requirements and environments.
