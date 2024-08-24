@@ -14,7 +14,6 @@ dist/
 *.ipr
 
 # Test files
-*.java
 
 # Package managers
 .gradle/
