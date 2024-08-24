@@ -1,0 +1,28 @@
+# Compiled class files
+*.class
+
+# Build output
+build/
+target/
+dist/
+
+# IDE-specific files
+.idea/
+.settings/
+*.iws
+*.iml
+*.ipr
+
+# Test files
+*.java
+
+# Package managers
+.gradle/
+.mvn/
+/gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# Logs
+*.log
+*.txt
