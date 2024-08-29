@@ -1,22 +1,11 @@
-/*
- * Synchronized is used for methods not for classes and variables.
- * 
- * when multiple threads are trying to operate on same java object then 
- * there is a chance of data inconsistency problem.
- * 
- * The synchronized keyword is used to control access to blocks of code or methods, 
- * ensuring that only one thread can execute the synchronized code at a time.
- * 
- * while a thread is executing synchronised method, no other synchro methods are
- * allowed to run, but a normal method can be executed.
- * 
- * but we have to only specify normal methods which doesnt effect data inconsistency like read operation
- * 
- * **try the code with and without synchronised keyword***
- */
+// instead of using synchronized method / block , we can use reentrantlock
+
+import java.util.concurrent.locks.ReentrantLock;
 
 class Display{
-    public synchronized void wish(String name){
+    ReentrantLock l= new ReentrantLock();
+    public void wish(String name){
+        l.lock();
         for(int i=0;i<10;i++){
             System.out.println("Good morning: ");
             try{
@@ -27,6 +16,7 @@ class Display{
             }
             System.out.println(i+name);
         }
+        l.unlock();
     }
 }
 class MyThread extends Thread{
@@ -41,7 +31,7 @@ class MyThread extends Thread{
     }
 }
 
-class Synchronization{
+class ReentrantLockDemo2{
     public static void main(String[] args) {
         Display d1=new Display();
         MyThread t1=new MyThread(d1,"Java");
