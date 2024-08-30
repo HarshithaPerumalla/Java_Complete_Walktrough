@@ -51,4 +51,6 @@ class PrintJob implements Runnable{
         service.shutdown();
     }
  }
+
+ //NOTE: while developing we servers and application servers , we canuse thread pool concept
  

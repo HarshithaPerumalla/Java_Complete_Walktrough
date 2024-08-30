@@ -23,6 +23,7 @@ final class FinalDemo{
 class FinalKeyword{
     public static void main(String[] args) {
         FinalDemo.example();
+        FinalDemo.finalMethod();
     }
 
 }
